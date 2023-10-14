@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addition</title>
+</head>
+<body  bgcolor="grey"><div class="main">
+    <h1> Calculator</h1>
+    <div id="n1">
+        <input type="text" name="t1" id="t1" placeholder="Enter A value">
+        <br>
+        <input type="text" name="t2" id="t2" placeholder="Enter B value">
+    </div>
+    <center>
+        <button type="button" id="b1" onclick="add()">+</button>
+        <button type="button" id="b2" onclick="sub()">-</button>
+        <button type="button" id="b3" onclick="mul()">x</button>
+        <button type="button" id="b4" onclick="divi()">/</button>
+    </center>
+    <div id="show">
+    </div></div>
+    <style>
+       .main {
+            position: center;
+            display:inline-block;
+            border: 2px;
+            margin: 10px;
+            padding: 10px;
+            background-color: aqua;
+            text-align: center;
+            margin-left: 40%;
+            margin-top: 100px;
+            width: 300px;
+            border-radius: 50px;
+            border-color: black;
+            border-style: solid;
+            height: 300px;
+            padding-top: 20px;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        h1{
+            font-style: bold;
+        }
+        #t1,#t2{
+            margin-bottom: 15px;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            width: 200px;
+            height:20px;
+            padding-top: 20px;
+            text-align: center;
+            text-size-adjust: 50px;
+        }
+        #b1,#b2,#b3,#b4{
+            background-color: chocolate;
+            color: aliceblue;
+            box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.12), 0px 1.6px 3.6px rgba(0, 0, 0, 0.12);
+        }
+        #show{
+            display: block;
+            color: black;
+            margin-top: 20px;
+            position: center;
+            text-align: center;
+            font-size: 25px;
+        
+        }
+    </style>
+    <script>
+        function add(){
+        const a=Number(document.getElementById("t1").value)
+        const b=Number(document.getElementById("t2").value)
+        const c=a+b
+        let x=document.getElementById("show")
+        x.innerHTML=c
+        }
+        function sub(){
+        const a=Number(document.getElementById("t1").value)
+        const b=Number(document.getElementById("t2").value)
+        const c=a-b
+        let x=document.getElementById("show")
+        x.innerHTML=c
+    }
+    function mul(){
+        const a=Number(document.getElementById("t1").value)
+        const b=Number(document.getElementById("t2").value)
+        const c=a*b
+        let x=document.getElementById("show")
+        x.innerHTML=c
+    }
+    function divi(){
+        const a=Number(document.getElementById("t1").value)
+        const b=Number(document.getElementById("t2").value)
+        const c=a/b
+        let x=document.getElementById("show")
+        x.innerHTML=c
+    }
+    </script>
+</body>
+
+</html>
