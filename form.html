@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Registration Form</title>
+    <link rel="icon" href="https://fontawesome.com/icons/file-export?f=classic&s=solid">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Registeration form</h1>
+        <table>
+            <form action="post">
+                <tr>
+                    <td>Firstname</td>
+                    <td><input class="bar" type="text" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <td>Lastname</td>
+                    <td><input class="bar" type="text" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input class="bar" type="number" placeholder="Age"></td>
+                </tr>
+                <tr>
+                    <td>Game</td>
+                    <td><input class="bar" type="text" placeholder="Game"></td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>
+                        <select name="Sex" class="bar">
+                            <option value="Male">Male</option>
+                            <option value="Male">Female</option>
+                            <option value="Male">Transgender</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td><input class="bar" type="number" placeholder="Contact"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input class="bar" type="Address" placeholder="Address"></td>
+                </tr>
+
+                <tr>
+                    <td>Image</td>
+                    <td><input class="bar" type="file"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+    <style>
+        .main{
+    
+    margin: 400px;
+    margin-top: 50px;
+    padding: 50px;
+    /*border-radius:40px;*/
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-right-radius: -10px;
+    border-color: black;
+    border-style:solid;
+
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+}
+td{
+    border-radius: 10px;
+    padding-left:35px;
+
+}
+select{
+    width: 60px;
+}
+.main:hover{
+    
+   
+   
+}
+.bar{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.bar:hover{
+    border-color: grey;
+    border-width: 5px;
+}
+td:hover{
+    display:block;
+
+}
+h1:hover{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+    </style>
+</body>
+
+</html>
